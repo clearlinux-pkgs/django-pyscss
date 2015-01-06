@@ -1,0 +1,10 @@
+# This file contains additional build requirements that did not get
+# picked up automatically. One name per line, no whitespace.
+django_compressor-python
+pyScss-python
+Django-python
+six-python
+six
+django-discover-runner-python
+Pillow-python
+django-appconf-python
