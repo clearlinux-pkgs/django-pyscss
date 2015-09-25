@@ -1,4 +1,3 @@
-# openstack (Kilo stable) needs version <2.0
-# once they update requirement, we can push >=2.0 versions
-# check: https://github.com/openstack/requirements/blob/stable/kilo/global-requirements.txt
-watchurl=https://pypi.python.org/simple/django-pyscss/ ../../packages/source/d/django-pyscss/django-pyscss-(1\./*).tar.gz.*
+# openstack Liberty needs version >= 2.0.2
+# for more information check https://github.com/openstack/requirements/blob/master/global-requirements.txt
+watchurl=https://pypi.python.org/simple/django-pyscss/ ../../packages/source/d/django-pyscss/django-pyscss-([\d.]*).tar.gz.*
