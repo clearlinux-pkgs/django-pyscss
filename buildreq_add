@@ -8,3 +8,7 @@ six
 django-discover-runner-python
 Pillow-python
 django-appconf-python
+enum34-python
+python-mock-python
+funcsigs-python
+pathlib-python
