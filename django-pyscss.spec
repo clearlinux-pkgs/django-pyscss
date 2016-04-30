@@ -4,7 +4,7 @@
 #
 Name     : django-pyscss
 Version  : 2.0.2
-Release  : 17
+Release  : 18
 URL      : https://pypi.python.org/packages/source/d/django-pyscss/django-pyscss-2.0.2.tar.gz
 Source0  : https://pypi.python.org/packages/source/d/django-pyscss/django-pyscss-2.0.2.tar.gz
 Summary  : Makes it easier to use PySCSS in Django.
