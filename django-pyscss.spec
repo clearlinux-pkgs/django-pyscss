@@ -4,13 +4,14 @@
 #
 Name     : django-pyscss
 Version  : 2.0.2
-Release  : 23
+Release  : 24
 URL      : https://pypi.python.org/packages/source/d/django-pyscss/django-pyscss-2.0.2.tar.gz
 Source0  : https://pypi.python.org/packages/source/d/django-pyscss/django-pyscss-2.0.2.tar.gz
 Summary  : Makes it easier to use PySCSS in Django.
 Group    : Development/Tools
 License  : BSD-2-Clause
 Requires: django-pyscss-python
+BuildRequires : Django
 BuildRequires : Django-python
 BuildRequires : Pillow-python
 BuildRequires : django-appconf-python
@@ -21,6 +22,7 @@ BuildRequires : funcsigs-python
 BuildRequires : pathlib-python
 BuildRequires : pbr
 BuildRequires : pip
+BuildRequires : pyScss
 BuildRequires : pyScss-python
 BuildRequires : python-dev
 BuildRequires : python-mock-python
@@ -37,6 +39,8 @@ A collection of tools for making it easier to use pyScss within Django.
 %package python
 Summary: python components for the django-pyscss package.
 Group: Default
+Requires: Django-python
+Requires: pyScss-python
 
 %description python
 python components for the django-pyscss package.
@@ -46,6 +50,8 @@ python components for the django-pyscss package.
 %setup -q -n django-pyscss-2.0.2
 
 %build
+export LANG=C
+export SOURCE_DATE_EPOCH=1484543855
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
@@ -55,9 +61,10 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 py.test-2.7 --verbose || : ; py.test-3.4 --verbose || :
 %install
+export SOURCE_DATE_EPOCH=1484543855
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot}
-python3 -tt setup.py build -b py3 install --root=%{buildroot}
+python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
+python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
 
 %files
 %defattr(-,root,root,-)
