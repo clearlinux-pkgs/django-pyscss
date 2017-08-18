@@ -1,5 +1,5 @@
 PKG_NAME := django-pyscss
-URL := https://pypi.python.org/packages/source/d/django-pyscss/django-pyscss-2.0.2.tar.gz
+URL := http://pypi.debian.net/django-pyscss/django-pyscss-2.0.2.tar.gz
 
 
 include ../common/Makefile.common
