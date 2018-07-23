@@ -4,9 +4,9 @@
 #
 Name     : django-pyscss
 Version  : 2.0.2
-Release  : 27
-URL      : http://pypi.debian.net/django-pyscss/django-pyscss-2.0.2.tar.gz
-Source0  : http://pypi.debian.net/django-pyscss/django-pyscss-2.0.2.tar.gz
+Release  : 28
+URL      : https://files.pythonhosted.org/packages/4b/7f/d771802305184aac6010826f60a0b2ecaa3f57d19ab0e405f0c8db07e809/django-pyscss-2.0.2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/4b/7f/d771802305184aac6010826f60a0b2ecaa3f57d19ab0e405f0c8db07e809/django-pyscss-2.0.2.tar.gz
 Summary  : Makes it easier to use PySCSS in Django.
 Group    : Development/Tools
 License  : BSD-2-Clause
@@ -74,7 +74,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532217617
+export SOURCE_DATE_EPOCH=1532325867
 python3 setup.py build -b py3
 
 %check
