@@ -4,7 +4,7 @@
 #
 Name     : django-pyscss
 Version  : 2.0.2
-Release  : 47
+Release  : 48
 URL      : https://files.pythonhosted.org/packages/4b/7f/d771802305184aac6010826f60a0b2ecaa3f57d19ab0e405f0c8db07e809/django-pyscss-2.0.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/4b/7f/d771802305184aac6010826f60a0b2ecaa3f57d19ab0e405f0c8db07e809/django-pyscss-2.0.2.tar.gz
 Summary  : Makes it easier to use PySCSS in Django.
@@ -26,6 +26,7 @@ BuildRequires : funcsigs-python
 BuildRequires : pathlib-python
 BuildRequires : pyScss
 BuildRequires : pyScss-python
+BuildRequires : pytest
 BuildRequires : python-mock-python
 BuildRequires : six
 BuildRequires : six-python
@@ -73,11 +74,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583533421
+export SOURCE_DATE_EPOCH=1633196123
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
-export FCFLAGS="$CFLAGS -fno-lto "
-export FFLAGS="$CFLAGS -fno-lto "
+export FCFLAGS="$FFLAGS -fno-lto "
+export FFLAGS="$FFLAGS -fno-lto "
 export CXXFLAGS="$CXXFLAGS -fno-lto "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
@@ -86,7 +87,7 @@ python3 setup.py build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-py.test-2.7 --verbose || : ; py.test-3.4 --verbose || :
+pytest --verbose || :
 %install
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}

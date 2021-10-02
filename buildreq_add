@@ -11,3 +11,4 @@ django-appconf-python
 python-mock-python
 funcsigs-python
 pathlib-python
+pytest
