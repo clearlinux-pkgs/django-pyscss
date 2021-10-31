@@ -4,7 +4,7 @@
 #
 Name     : django-pyscss
 Version  : 2.0.2
-Release  : 51
+Release  : 52
 URL      : https://files.pythonhosted.org/packages/4b/7f/d771802305184aac6010826f60a0b2ecaa3f57d19ab0e405f0c8db07e809/django-pyscss-2.0.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/4b/7f/d771802305184aac6010826f60a0b2ecaa3f57d19ab0e405f0c8db07e809/django-pyscss-2.0.2.tar.gz
 Summary  : Makes it easier to use PySCSS in Django.
@@ -74,7 +74,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1633196123
+export SOURCE_DATE_EPOCH=1635724299
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
